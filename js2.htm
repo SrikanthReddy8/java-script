@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<body>
+<form>
+<label for="no">a</label>
+<input type="text" id="no" name="no" value="" ><br><br>
+</form>
+<br><br>
+<button type="button" onclick="test()">ADD</button>
+<p id="good">bhoom</p>
+
+<script>
+
+function test()
+	{
+		var a = document.getElementById('no').value;
+	if (a) 	{
+				var b = Number(a);
+				if (b%2==0)
+				{
+					document.getElementById ("good").innerHTML = "given no is even";
+				}
+				else 	{
+							document.write('given no is odd'); 
+						}
+			}  		
+				else 	{
+						document.getElementById ("good").innerHTML = "Please enter value to check odd or even number";
+						}
+	}
+
+</script>
+</body>
+</html>
