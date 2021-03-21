@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<body>
+<h2>checking the given value</h2>
+<p id="good"><strong>the is displayed here</strong></p>
+
+<script> 
+function check(x)
+	{
+		var x = typeof x;
+		var output;
+		if(x=='string')
+		{
+			output = "given value is STRING";
+		} else if( x== 'boolean') {
+			output = "given value is Boolean";
+		} else if(x == 'number') {
+		output = "given value is number";
+		}
+		return output;
+	}
+	
+		document.getElementById("good").innerHTML = check(22);
+				
+</script>
+</body>
+</html>

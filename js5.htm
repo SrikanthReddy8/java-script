@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+<h2 id = "demo">no problem </h2>
+
+<button onclick="good()">click me!</button>
+
+<script>
+function good()
+{
+			var d = "reddy";
+			var s=d.split("");
+			var text="";
+			var i;
+			for (i = 0;i < s.length; i++)
+				{
+				 text += s[i] + "<br>"
+				}
+				document.getElementById("demo").innerHTML = text.toUpperCase();
+				
+}
+</script>
+</html>
